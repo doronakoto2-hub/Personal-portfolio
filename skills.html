@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills - Personal Portfolio</title>
+    <meta name="description" content="Technical and professional skills overview featuring a grid of 10 skill tags." />
+    <meta property="og:title" content="Skills - Personal Portfolio" />
+    <meta property="og:description" content="Technical and professional skills overview featuring a grid of 10 skill tags." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Plain CSS Stylesheet (No frameworks, No React, No Tailwind, No JS required) -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- ==========================================================================
+         Header & Navigation
+         ========================================================================== -->
+    <header class="site-header" id="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-logo" id="brand-logo">
+          <!-- REPLACE THIS PLACEHOLDER WITH YOUR NAME OR LOGO -->
+          <span class="brand-placeholder">[Your Name]</span>
+        </a>
+        <nav aria-label="Main Navigation" id="main-nav">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" id="nav-home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="projects.html" class="nav-link" id="nav-projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="skills.html" class="nav-link active" id="nav-skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="fun-facts.html" class="nav-link" id="nav-fun-facts">Fun Facts</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+         Main Page Content: Skills Section (10 Skill Tags)
+         ========================================================================== -->
+    <main class="main-content" id="main-content">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title" id="skills-page-title">Skills &amp; Competencies</h1>
+          <p class="section-subtitle">
+            A curated grid of 10 skill tags ready to be customized with your technologies, tools, and proficiencies.
+          </p>
+        </div>
+
+        <!-- ====================================================================
+             10 Skill Tags Grid
+             REPLACE THESE PLACEHOLDERS WITH YOUR ACTUAL SKILLS:
+             Examples: HTML5, CSS3, JavaScript, Git & GitHub, Responsive Web Design,
+             Cross-Browser Compatibility, Web Accessibility (a11y), UI/UX Design,
+             API Integration, Problem Solving.
+             ==================================================================== -->
+        <section class="section" style="border-top: none; padding-top: 0;" aria-label="Skills Grid">
+          <div class="skills-grid" id="skills-grid">
+            
+            <!-- Skill Tag 1 -->
+            <div class="skill-tag-card" id="skill-1">
+              <span class="skill-number">01</span>
+              <span class="skill-name">[Skill 1]</span>
+            </div>
+
+            <!-- Skill Tag 2 -->
+            <div class="skill-tag-card" id="skill-2">
+              <span class="skill-number">02</span>
+              <span class="skill-name">[Skill 2]</span>
+            </div>
+
+            <!-- Skill Tag 3 -->
+            <div class="skill-tag-card" id="skill-3">
+              <span class="skill-number">03</span>
+              <span class="skill-name">[Skill 3]</span>
+            </div>
+
+            <!-- Skill Tag 4 -->
+            <div class="skill-tag-card" id="skill-4">
+              <span class="skill-number">04</span>
+              <span class="skill-name">[Skill 4]</span>
+            </div>
+
+            <!-- Skill Tag 5 -->
+            <div class="skill-tag-card" id="skill-5">
+              <span class="skill-number">05</span>
+              <span class="skill-name">[Skill 5]</span>
+            </div>
+
+            <!-- Skill Tag 6 -->
+            <div class="skill-tag-card" id="skill-6">
+              <span class="skill-number">06</span>
+              <span class="skill-name">[Skill 6]</span>
+            </div>
+
+            <!-- Skill Tag 7 -->
+            <div class="skill-tag-card" id="skill-7">
+              <span class="skill-number">07</span>
+              <span class="skill-name">[Skill 7]</span>
+            </div>
+
+            <!-- Skill Tag 8 -->
+            <div class="skill-tag-card" id="skill-8">
+              <span class="skill-number">08</span>
+              <span class="skill-name">[Skill 8]</span>
+            </div>
+
+            <!-- Skill Tag 9 -->
+            <div class="skill-tag-card" id="skill-9">
+              <span class="skill-number">09</span>
+              <span class="skill-name">[Skill 9]</span>
+            </div>
+
+            <!-- Skill Tag 10 -->
+            <div class="skill-tag-card" id="skill-10">
+              <span class="skill-number">10</span>
+              <span class="skill-name">[Skill 10]</span>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Instructions Card -->
+        <section class="section" id="skills-guidance-section">
+          <div class="card" id="skills-guidance-card">
+            <h2 class="card-title">How to Customize Your Skills</h2>
+            <div class="card-body">
+              <p>Each card in the grid above represents one of your core skills. To customize:</p>
+              <ul style="margin-top: 12px; margin-left: 20px; list-style-type: disc; display: flex; flex-direction: column; gap: 8px;">
+                <li>Open <code>skills.html</code> in your editor.</li>
+                <li>Replace the text inside <code>&lt;span class="skill-name"&gt;[Skill X]&lt;/span&gt;</code> with your actual skills (such as HTML5, CSS3, JavaScript, etc.).</li>
+                <li>Duplicate or remove any <code>.skill-tag-card</code> element to expand or adjust your list.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- ==========================================================================
+         Footer
+         ========================================================================== -->
+    <footer class="site-footer" id="site-footer">
+      <div class="container footer-container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-title">[Your Name]</div>
+            <div class="footer-desc">Personal Portfolio Website &bull; Plain HTML &amp; CSS</div>
+          </div>
+          <div class="footer-contact-links" id="footer-contact-links">
+            <a href="mailto:[your.email@example.com]" class="footer-contact-link" id="footer-email-link">
+              <span>✉</span> Email: [your.email@example.com]
+            </a>
+            <a href="https://github.com/[your-github]" target="_blank" rel="noopener noreferrer" class="footer-contact-link" id="footer-github-link">
+              <span>🐙</span> GitHub: [your-github]
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>&copy; 2026 [Your Name]. All rights reserved.</div>
+          <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="fun-facts.html">Fun Facts</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

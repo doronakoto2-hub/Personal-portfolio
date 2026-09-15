@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <meta name="description" content="A multi-page personal portfolio website built with pure HTML and CSS featuring a homepage, projects, skills, creative about me, and contact pages." />
+    <meta property="og:title" content="Personal Portfolio" />
+    <meta property="og:description" content="A multi-page personal portfolio website built with pure HTML and CSS featuring a homepage, projects, skills, creative about me, and contact pages." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Plain CSS Stylesheet (No frameworks, No React, No Tailwind, No JS required) -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- ==========================================================================
+         Header & Navigation
+         ========================================================================== -->
+    <header class="site-header" id="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-logo" id="brand-logo">
+          <!-- REPLACE THIS PLACEHOLDER WITH YOUR NAME OR LOGO:
+               Example: <span>Jane Doe</span> or <img src="logo.png" alt="Jane Doe Logo"> -->
+          <span class="brand-placeholder">[Your Name]</span>
+        </a>
+        <nav aria-label="Main Navigation" id="main-nav">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active" id="nav-home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="projects.html" class="nav-link" id="nav-projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="skills.html" class="nav-link" id="nav-skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="fun-facts.html" class="nav-link" id="nav-fun-facts">Fun Facts</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+         Main Page Content
+         ========================================================================== -->
+    <main class="main-content" id="main-content">
+      <div class="container">
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero-section">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <!-- Placeholder: [Greeting / Name] -->
+              <!-- REPLACE THIS WITH YOUR GREETING:
+                   Example: <span>Hello, my name is Alex</span> -->
+              <span class="hero-greeting">[Greeting / Name]</span>
+              
+              <!-- Placeholder: [Your Title / Tagline] -->
+              <!-- REPLACE THIS WITH YOUR TITLE OR HEADLINE:
+                   Example: <h1>Aspiring Web Developer & Tech Enthusiast</h1> -->
+              <h1 class="hero-title" id="hero-title">[Your Name / Headline]</h1>
+              
+              <!-- Placeholder: [Short Tagline / Bio] -->
+              <!-- REPLACE THIS WITH YOUR SHORT INTRODUCTORY SUMMARY -->
+              <p class="hero-tagline" id="hero-tagline">[Your Title / Tagline / Short Introduction]</p>
+              
+              <div class="hero-actions">
+                <a href="projects.html" class="btn btn-primary" id="btn-view-projects">View My Projects</a>
+                <a href="contact.html" class="btn btn-secondary" id="btn-contact-me">Get In Touch</a>
+              </div>
+            </div>
+
+            <!-- Profile Image Placeholder -->
+            <div class="profile-placeholder-container">
+              <!-- ====================================================================
+                   REPLACE THIS PLACEHOLDER WITH YOUR ACTUAL PROFILE IMAGE:
+                   Example:
+                   <img src="images/profile.jpg" alt="Profile of [Your Name]" class="profile-placeholder" style="object-fit: cover;">
+                   ==================================================================== -->
+              <div class="placeholder-box profile-placeholder" id="profile-image-placeholder">
+                <div class="placeholder-icon" aria-hidden="true">👤</div>
+                <div class="placeholder-label">[Profile Image Placeholder]</div>
+                <div class="placeholder-hint">&lt;img src="..." alt="..."&gt;</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section" id="about-section">
+          <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <p class="section-subtitle">A brief overview of who I am and what I do.</p>
+          </div>
+          <div class="card" id="about-card">
+            <!-- ====================================================================
+                 REPLACE THIS PLACEHOLDER WITH YOUR ACTUAL ABOUT ME BIOGRAPHY:
+                 No fabricated details added — insert your authentic story below.
+                 ==================================================================== -->
+            <div class="text-placeholder-block" id="about-text-placeholder">
+              [About Me: Add your authentic personal biography, educational background, journey, and what drives you here. No invented information has been added.]
+            </div>
+          </div>
+        </section>
+
+        <!-- My Interests & My Goals Split Sections -->
+        <section class="section" id="interests-goals-section">
+          <div class="split-grid">
+            
+            <!-- My Interests Section -->
+            <div class="card" id="interests-card">
+              <h2 class="card-title">My Interests</h2>
+              <!-- ====================================================================
+                   REPLACE THIS PLACEHOLDER WITH YOUR INTERESTS:
+                   Example: Web development, UI design, machine learning, reading, cycling.
+                   ==================================================================== -->
+              <div class="text-placeholder-block" id="interests-placeholder">
+                <strong>My Interests:</strong> [List your personal, academic, or creative interests here. e.g., web design, open-source software, algorithms, data science, etc.]
+              </div>
+            </div>
+
+            <!-- My Goals Section -->
+            <div class="card" id="goals-card">
+              <h2 class="card-title">My Goals</h2>
+              <!-- ====================================================================
+                   REPLACE THIS PLACEHOLDER WITH YOUR GOALS:
+                   Example: Build 5 full-stack apps, contribute to open source, land a developer role.
+                   ==================================================================== -->
+              <div class="text-placeholder-block" id="goals-placeholder">
+                <strong>My Goals:</strong> [List your short-term and long-term milestones here. e.g., master front-end engineering, build portfolio projects, collaborate on team initiatives.]
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Quick Section Preview: Skills & Projects -->
+        <section class="section" id="quick-links-section">
+          <div class="section-header">
+            <h2 class="section-title">Explore My Portfolio</h2>
+            <p class="section-subtitle">Navigate through the dedicated sections of this website.</p>
+          </div>
+          <div class="split-grid">
+            <div class="card" id="projects-preview-card">
+              <h3 class="card-title">Featured Projects</h3>
+              <p class="card-body">Browse 10 structured project showcase cards with live demos, code repository links, and tech stacks.</p>
+              <div style="margin-top: 16px;">
+                <a href="projects.html" class="btn btn-secondary btn-sm" id="link-to-projects">Go to Projects Page &rarr;</a>
+              </div>
+            </div>
+            <div class="card" id="skills-preview-card">
+              <h3 class="card-title">Technical Skills</h3>
+              <p class="card-body">Review the collection of 10 skill tags highlighting core competencies and tools.</p>
+              <div style="margin-top: 16px;">
+                <a href="skills.html" class="btn btn-secondary btn-sm" id="link-to-skills">Go to Skills Page &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <!-- ==========================================================================
+         Footer
+         ========================================================================== -->
+    <footer class="site-footer" id="site-footer">
+      <div class="container footer-container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-title">[Your Name]</div>
+            <div class="footer-desc">Personal Portfolio Website &bull; Plain HTML &amp; CSS</div>
+          </div>
+          <!-- Contact Links -->
+          <div class="footer-contact-links" id="footer-contact-links">
+            <!-- REPLACE THIS PLACEHOLDER WITH YOUR EMAIL ADDRESS:
+                 Example: <a href="mailto:you@example.com" class="footer-contact-link">Email</a> -->
+            <a href="mailto:[your.email@example.com]" class="footer-contact-link" id="footer-email-link">
+              <span>✉</span> Email: [your.email@example.com]
+            </a>
+            <!-- REPLACE THIS PLACEHOLDER WITH YOUR GITHUB PROFILE URL:
+                 Example: <a href="https://github.com/yourusername" class="footer-contact-link">GitHub</a> -->
+            <a href="https://github.com/[your-github]" target="_blank" rel="noopener noreferrer" class="footer-contact-link" id="footer-github-link">
+              <span>🐙</span> GitHub: [your-github]
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div>&copy; 2026 [Your Name]. All rights reserved.</div>
+          <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="fun-facts.html">Fun Facts</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

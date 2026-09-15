@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Personal Portfolio</title>
+    <meta name="description" content="Get in touch with me via email, GitHub, or direct message form." />
+    <meta property="og:title" content="Contact - Personal Portfolio" />
+    <meta property="og:description" content="Get in touch with me via email, GitHub, or direct message form." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Plain CSS Stylesheet (No frameworks, No React, No Tailwind, No JS required) -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- ==========================================================================
+         Header & Navigation
+         ========================================================================== -->
+    <header class="site-header" id="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-logo" id="brand-logo">
+          <!-- REPLACE THIS PLACEHOLDER WITH YOUR NAME OR LOGO -->
+          <span class="brand-placeholder">[Your Name]</span>
+        </a>
+        <nav aria-label="Main Navigation" id="main-nav">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" id="nav-home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="projects.html" class="nav-link" id="nav-projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="skills.html" class="nav-link" id="nav-skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="fun-facts.html" class="nav-link" id="nav-fun-facts">Fun Facts</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link active" id="nav-contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ==========================================================================
+         Main Page Content: Contact Page
+         ========================================================================== -->
+    <main class="main-content" id="main-content">
+      <div class="container">
+        
+        <div class="section-header">
+          <h1 class="section-title" id="contact-page-title">Contact Me</h1>
+          <p class="section-subtitle">
+            Whether you want to discuss a project collaboration, ask a question, or simply say hello, feel free to reach out.
+          </p>
+        </div>
+
+        <div class="contact-grid" id="contact-grid">
+          
+          <!-- Contact Details Card -->
+          <div class="contact-card" id="contact-info-card">
+            <h2 class="card-title">Contact Information</h2>
+            <p class="card-body">
+              Below are the primary channels to reach me directly. Replace the bracketed placeholders with your actual contact details.
+            </p>
+
+            <!-- ================================================================
+                 Email: []
+                 REPLACE THIS PLACEHOLDER WITH YOUR REAL EMAIL ADDRESS:
+                 Example: <a href="mailto:alex@example.com">alex@example.com</a>
+                 ================================================================ -->
+            <div class="contact-item" id="contact-email-item">
+              <div class="contact-item-icon" aria-hidden="true">✉️</div>
+              <div class="contact-item-info">
+                <span class="contact-item-label">Email Address</span>
+                <a href="mailto:[your.email@example.com]" class="contact-item-value" id="contact-email-link">
+                  Email: [your.email@example.com]
+                </a>
+              </div>
+            </div>
+
+            <!-- ================================================================
+                 GitHub: []
+                 REPLACE THIS PLACEHOLDER WITH YOUR GITHUB PROFILE URL:
+                 Example: <a href="https://github.com/alexdeveloper">github.com/alexdeveloper</a>
+                 ================================================================ -->
+            <div class="contact-item" id="contact-github-item">
+              <div class="contact-item-icon" aria-hidden="true">🐙</div>
+              <div class="contact-item-info">
+                <span class="contact-item-label">GitHub Profile</span>
+                <a href="https://github.com/[your-github]" target="_blank" rel="noopener noreferrer" class="contact-item-value" id="contact-github-link">
+                  GitHub: [https://github.com/your-github]
+                </a>
+              </div>
+            </div>
+
+            <!-- Additional Helpful Tip Card -->
+            <div class="text-placeholder-block" style="font-style: normal; margin-top: 8px;">
+              <strong>Note:</strong> You can edit the <code>mailto:</code> and <code>href</code> attributes inside <code>contact.html</code> to link directly to your inbox and GitHub page.
+            </div>
+
+          </div>
+
+          <!-- Direct Message Form (Pure HTML form - No JS required) -->
+          <div class="contact-card" id="contact-form-card">
+            <h2 class="card-title">Send a Message</h2>
+            <form action="mailto:[your.email@example.com]" method="POST" enctype="text/plain" class="contact-form" id="contact-form">
+              <div class="form-group">
+                <label for="sender-name" class="form-label">Your Name</label>
+                <input type="text" id="sender-name" name="name" class="form-input" placeholder="e.g. Jane Doe" required />
+              </div>
+
+              <div class="form-group">
+                <label for="sender-email" class="form-label">Your Email</label>
+                <input type="email" id="sender-email" name="email" class="form-input" placeholder="e.g. jane@example.com" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message-subject" class="form-label">Subject</label>
+                <input type="text" id="message-subject" name="subject" class="form-input" placeholder="Project Inquiry / Hello" required />
+              </div>
+
+              <div class="form-group">
+                <label for="sender-message" class="form-label">Message</label>
+                <textarea id="sender-message" name="message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" id="btn-submit-message">Send Message</button>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </main>
+
+    <!-- ==========================================================================
+         Footer
+         ========================================================================== -->
+    <footer class="site-footer" id="site-footer">
+      <div class="container footer-container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-title">[Your Name]</div>
+            <div class="footer-desc">Personal Portfolio Website &bull; Plain HTML &amp; CSS</div>
+          </div>
+          <div class="footer-contact-links" id="footer-contact-links">
+            <a href="mailto:[your.email@example.com]" class="footer-contact-link" id="footer-email-link">
+              <span>✉</span> Email: [your.email@example.com]
+            </a>
+            <a href="https://github.com/[your-github]" target="_blank" rel="noopener noreferrer" class="footer-contact-link" id="footer-github-link">
+              <span>🐙</span> GitHub: [your-github]
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>&copy; 2026 [Your Name]. All rights reserved.</div>
+          <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="skills.html">Skills</a>
+            <a href="fun-facts.html">Fun Facts</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
